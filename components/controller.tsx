@@ -237,7 +237,7 @@ export default function Controller({
   };
 
   return (
-    <div className="w-full h-full flex flex-col gap-y-8">
+    <div className="w-full h-full flex flex-col gap-y-12">
       <div className="flex justify-end">
         <AlertDialog>
           <AlertDialogTrigger asChild>
@@ -263,8 +263,8 @@ export default function Controller({
         </AlertDialog>
       </div>
 
-      <div className="flex flex-col gap-y-3">
-        <div ref={waveformRef} className="mt-4 shadow-md"></div>
+      <div className="flex flex-col gap-y-4 lg:gap-y-3">
+        <div ref={waveformRef} className="mt-4"></div>
 
         <div className="flex gap-4 justify-end w-full">
           <button
@@ -295,7 +295,7 @@ export default function Controller({
         </div>
       </div>
 
-      <div className="w-full flex justify-between items-end">
+      <div className="w-full absolute bottom-4 left-0 px-4 border-t pt-8 flex flex-col lg:flex-row justify-between items-end gap-y-6 lg:gap-y-0">
         <button
           onClick={handlePlayPause}
           className="p-2 rounded-full bg-gray-50 dark:bg-gray-600 w-40 flex justify-center"
@@ -307,7 +307,7 @@ export default function Controller({
           )}
         </button>
 
-        <div className="flex gap-4">
+        <div className="flex flex-col lg:flex-row gap-4">
           <div className="">
             <label className="block mb-2">Start Time (seconds)</label>
             <input

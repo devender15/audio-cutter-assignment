@@ -14,7 +14,7 @@ export default function AudioCutter() {
   };
 
   return (
-    <div className="p-4 rounded-lg w-full h-full">
+    <div className="p-2 rounded-lg w-full h-full">
       {audioFile ? (
         <Controller audioFile={audioFile} setAudioFile={setAudioFile} />
       ) : (
