@@ -56,6 +56,9 @@ const config = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
+      backgroundColor: {
+        main: "#17171e"
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
